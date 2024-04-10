@@ -9,6 +9,162 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="w-screen h-screen bg-daily-dev-tips flex items-center justify-center">Welcome</div>
+    <div
+      class="w-screen h-screen bg-daily-dev-tips flex items-center justify-center overflow-hidden"
+    >
+      <div id="calendar" class="relative w-full h-full overflow-auto p-10">
+        <div id="calendar-bg" class="flex flex-col w-full min-h-full relative">
+          <div
+            class="flex-1 border-b border-t border-t-orange-800 border-b-orange-800"
+          >
+            <span class="-ml-10 text-xs text-gray-800">00:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">01:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">02:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">03:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">04:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">05:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">06:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">07:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">08:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">09:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">10:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">11:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">12:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">13:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">14:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">15:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">16:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">17:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">18:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">19:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">20:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">21:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">22:00</span>
+          </div>
+          <div class="flex-1 border-b border-b-orange-800">
+            <span class="-ml-10 text-xs text-gray-800">23:00</span>
+          </div>
+
+          <div class="absolute inset-0 flex">
+            <div
+              id="cal-monday"
+              class="flex-1 border-r border-orange-900 relative"
+            >
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Monday
+              </h1>
+            </div>
+            <div
+              id="cal-tuesday"
+              class="flex-1 border-r border-orange-900 relative"
+            >
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Tuesday
+              </h1>
+            </div>
+            <div
+              id="cal-wednesday"
+              class="flex-1 border-r border-orange-900 relative"
+            >
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Wednesday
+              </h1>
+            </div>
+            <div
+              id="cal-thursday"
+              class="flex-1 border-r border-orange-900 relative"
+            >
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Thursday
+              </h1>
+            </div>
+            <div
+              id="cal-friday"
+              class="flex-1 border-r border-orange-900 relative"
+            >
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Friday
+              </h1>
+            </div>
+            <div
+              id="cal-saturday"
+              class="flex-1 border-r border-orange-900 relative"
+            >
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Saturday
+              </h1>
+            </div>
+            <div id="cal-sunday" class="flex-1 relative">
+              <h1
+                class="text-sm text-center text-green-700 absolute -top-6 right-0 left-0"
+              >
+                Sunday
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import main from "/js/index.js";
+
+      main();
+    </script>
   </body>
 </html>
