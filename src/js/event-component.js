@@ -18,7 +18,9 @@ export class EventComponent extends HTMLElement {
       </style>
       <div class="event-component" style="width: ${this.getAttribute(
         "width"
-      )}; top: ${this.top}%; height: ${this.height}%">
+      )}%; top: ${this.top}%; height: ${
+      this.height
+    }%; left: ${this.getAttribute("left")}%">
         <span class="event-component__title">
         ${this.getAttribute("title")}
         </span>
@@ -50,7 +52,7 @@ export class EventComponent extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["width", "start", "end", "title"];
+    return ["width", "left"];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
