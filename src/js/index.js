@@ -82,9 +82,7 @@ function getGroupMetadata(group) {
   let columns = 1;
   const result = [{ col: 1, ...firstEvent }];
 
-  if (copy.length) {
-    columns = 2;
-  } else {
+  if (!copy.length) {
     return {
       columns,
       events: result,
@@ -108,6 +106,7 @@ function getGroupMetadata(group) {
     // if next event ends after previous ends, then the gap is on previous
     if (next.end > end) {
       gapColumn = currentColumn - 1;
+      gapEnd = next.end;
       // if next event ends on the same time as prev, then no gap
     } else if (next.end === end) {
       gapColumn = currentColumn;
@@ -115,6 +114,7 @@ function getGroupMetadata(group) {
       gapEnd = next.end;
     } else {
       gapColumn = currentColumn;
+      gapStart = next.end;
     }
 
     result.push({ col: currentColumn, ...next });
